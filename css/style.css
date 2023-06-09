@@ -247,9 +247,9 @@ section i{
     background: white;
     border-radius: 20px;
     width: 1448px;
-    height:777px;
+    height:757px;
     position: absolute;
-    top: 20%;
+    top: 23%;
     right: 5%;
 }
 .box h1{
@@ -266,7 +266,7 @@ section i{
     position: relative;
     left:82%;
     top:-5%;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 15%;
     height: 6%;
     cursor: pointer;
@@ -296,31 +296,34 @@ section i{
     cursor: pointer;
 
 }
-.box .fdate{
+.box ul .filter{
+    background: #FFFFFF;
+    border: 1px solid rgba(203, 210, 220, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    font-size: 18px;
     position: absolute;
-    left:56%;
-    top:11.5px;
-    color: #BEBFC3;
+    left:87.5%;
+    top:17.8%;
+    
+    width: 9%;
+    height: 45px;
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 20px;
+    
+    color: #4C9E2A;    
 }
-.box .tdate{
+.img_filter{
+   
     position: absolute;
-    left:66%;
-    top:11.5px;
-    color: #BEBFC3;
-}
-.box .apply{
-    position: absolute;
-    left:76%;
-    top:11.5px;
-    color: #4C9E2A;
-    padding-left: 15px;
-}
-.box .print{
-    position: absolute;
-    left:86%;
-    top:11.5px;
-    color: #4C9E2A;
-    padding-left: 15px;
+    left:88.1%;
+    top:9.1px;
 }
 .box ul button:hover{
     background:#1e5631 ;
@@ -344,15 +347,16 @@ section i{
 }
 
 .box input{
+    background: #FFFFFF;
+    border: 2px solid rgba(203, 210, 220, 0.5);
     border-radius: 15px;
-    border:1px solid #6aaf42;
     outline: none;
     padding: 0 25px;
     height: 45px;
     left: 5%;
     top: -10px;
     position: relative;
-    width:50%;
+    width:1172px;
    margin-top: 20px;
 }
 .box ul .i{
@@ -386,7 +390,7 @@ section i{
 }
 .main-top{
     height: 78.8565673828125px;
-    width: 1300px;
+    width: 1448px;
     left: 456px;
     top: 214px;
     border-radius: 25px;
@@ -438,6 +442,7 @@ section i{
     font-size: 15px;
     min-width: 100%;
     border-radius: 5px 5px 0 0;
+   margin-left: 45px;
 }
 table thead tr{
     color: gray;
@@ -540,23 +545,26 @@ input[type=checkbox] {
     background: #F8F9FB;
     border-radius: 20px;
     padding-top: 40px;
+    height: 61.49px;
     
 
 }
 
 .bottom-field p{
     position: initial;
-    bottom: 10%;
-    right: -100px;
+    top: 8%;
+    left: -100px;
     color: black;
     margin: 12px;
 }
 .pagination{
     display: inline-flex;
-    background: white;
+    background: #F8F9FB;
+    border-radius: 20px;
     position: relative;
-    left: 900px;
+    left: 1000px;
     bottom: 15px;
+    
 }
 .pagination li{
     list-style: none;
@@ -602,8 +610,8 @@ input[type=checkbox] {
 #border{
     position: absolute;
     height: 35px;
-    right: -27%;
-    bottom: 8px;
+    right: -77%;
+    bottom: -5px;
 
 border: 1px solid #D9D9D9;
 transform: rotate(180deg);
@@ -622,6 +630,36 @@ transform: rotate(180deg);
 }
 #option{
     position: absolute;
-    bottom: 30%;
+    bottom: 7%;
+    right: -50%;
+    border-radius: 20px;
+    color: #280559;
+    width: 37px;
 }
+#pages{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+#page_num{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.pagination h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    
+    color: #92929D;
+}
+#option:hover{
+    background:#1e5631 ;
+    color: white;
+    transition: 0.5rem;
+}
+
 

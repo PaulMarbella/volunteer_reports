@@ -70,12 +70,8 @@
             <div class="inputs">
             <input type="text" placeholder="  Search " id="search"></input>
             <div class="i"><img src="./media/search.png"></div><br>
-            <button class="fdate">From Date</button>
-            <button class="tdate">To Date</button>
-            <button class="apply">Apply</button>
-            <img src="./media/apply.png" class="btn-apply" style="width: auto; height: 33px;">
-            <button class="print">Print</button>
-            <img src="./media/print.png" class="btn-print" style="width: auto; height: 33px;">
+            <button class="filter">Filters</button>
+            <img src="./media/apply.png" class="img_filter" style="width: auto; height: 45px;" >
         </div>
         </ul>
         <div class="sub-menu-wrap" id="subMenu">
@@ -86,97 +82,91 @@
             </div>
 
 
-        <!-- <table class="table">
+        <table class="table">
         <thead>
              <tr>
                 <th><input type="checkbox" name="" class="select_all_items"></th> 
                 <th> Date</th>
+                <th> Time</th>
+                <th> Reports</th>
                 <th> Name</th>
-                <th> Desciption</th>
-                <th> Status</th>
-                <th> role</th>
-                <th> Option</th>
+                <th> Role</th>
+                
             </tr>
         </thead>
         <tbody id="tableData">
             <tr>
                 <td><input type="checkbox" class="item_id" ></td>
                 <td>2 Jan 2023</td>
-                <td style="font-weight:bold;" >Mia Cute</td>
+                <td>02:30 PM</td>
                 <td>Lorem ipsum dolor sit amet</a></td>
-                <td style="font-weight:bold;" >Approved</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()">:</span></td>
+                <td style="font-weight:bold;" >Mia Cute</td>
+                <td>First aid</td>
+                
             </tr>
             <tr>
                 <td><input type="checkbox" class="item_id" ></td>
                 <td>14 Dec 2022</td>
+                <td>10:30 AM</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
                 <td style="font-weight:bold;" >Karina NoJowa</td>
-                <td>Consectetur adipiscing elit</a></td>
-                <td style="font-weight:bold;" > Pending</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+                <td>Sorting donations</td>
             </tr>
             <tr>
                 <td><input type="checkbox" class="item_id" ></td>
-                <td>28 Nov 2022</td>
-                <td style="font-weight:bold;" >Reyziel May Dan</td>
+                <td>2 Jan 2023</td>
+                <td>02:30 PM</td>
                 <td>Lorem ipsum dolor sit amet</a></td>
-                <td style="font-weight:bold;" >Pending</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+                <td style="font-weight:bold;" >Mia Cute</td>
+                <td>First aid</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>21 Nov 2022</td>
+                <td>10:30 AM</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
+                <td style="font-weight:bold;" >Dan Sanaol</td>
+                <td>Driving/Deliveries</td>
             </tr>
             <tr>
                 <td><input type="checkbox" class="item_id" ></td>
                 <td>26 Nov 2022</td>
-                <td style="font-weight:bold;" >Mami Guls</td>
+                <td>10:30 AM</td>
                 <td>Lorem ipsum dolor sit amet</a></td>
-                <td style="font-weight:bold;" >Approved</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()" id="span1">:</span></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" class="item_id" ></td>
-                <td>23 Nov 2022</td>
-                <td style="font-weight:bold;" >Dan Sanaol</td>
-                <td>Enim ad minim veniam</a></td>
-                <td style="font-weight:bold;" >Denied</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+                <td style="font-weight:bold;" >Mami Guls</td>
+                <td>Petcare/td>
             </tr>
 
             <tr>
                 <td><input type="checkbox" class="item_id" ></td>
-                <td>23 Nov 2022</td>
+                <td>18 Nov 2022</td>
+                <td>02:30 PM</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
                 <td style="font-weight:bold;" >Gangnam Chai</td>
-                <td>Quis nostrud exercitation ullamco laboris</a></td>
-                <td style="font-weight:bold;" >Approved</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+                <td>Counseling/Mental Health...</td>
             </tr>
           
             <tr>
                 <td><input type="checkbox" class="item_id" ></td>
-                <td>23 Nov 2022</td>
+                <td>15 Nov 2022</td>
+                <td>10:30 AM</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
                 <td style="font-weight:bold;" >Mark Ngipin</td>
-                <td>Duis aute irure dolor in reprehenderit</a></td>
-                <td style="font-weight:bold;" >Denied</td>
-                <td><button>view</button></td>
-                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+                <td>First aid</td>
             </tr>
           
           
     
         </tbody>
         </table>
-    </div> -->
+    </div>
         <div class="bottom-field">
-            <p>1</p>
-            <p>-5 of 56</p>
+            <p id="page_num">1</p>
+            <p id="pages">-5 of 56</p>
             <ul class="pagination">
                 <li><a href="#" id="prev"><button class="prev">&#139;</button></a></li>
                 <li><a href="#" id="next"><button class="next">&#155;</button></a></li>
-                <p>The page you're on</p>
+                <h2>The page you're on</h2>
                 <select name="" id="option">
                     <option value="1" id="page1">1</option>
                     <option value="2" id="2">2</option>
