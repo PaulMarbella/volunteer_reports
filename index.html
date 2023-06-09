@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Report</title>
+
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sue+Ellen+Francisco&family=Vidaloka&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a36db9a80f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    
+
+</head>
+<body>
+    <header >
+        <ul>
+        <li><a href="#" class="logo"><img src="./media/logo.png"></a></li>
+        <input type="text" placeholder="  Search e.g volunteer"></input>
+        <div class="i"><img src="./media/search.png"></div><br>
+        <li><a href="#" class="icon"><img src="./media/christianT.png" style="width: auto; height:70px"></a></li>
+        <h4>Christian Tadioan</h4>
+        <a href="#" class="bell"><img src="./media/bell.png" style="width: auto; height:50px"></a>
+        </ul>
+    </header>
+
+
+    <div class="container">
+      <nav>
+        <ul>
+         <li class="one"><a href="User_management.html" ><i class="fa-regular fa-user"></i>User Support Management</a></li><!--
+        --><li class="two"><a href="#"><i class="fa-regular fa-light fa-credit-card"></i>Donation Management</a></li><!--
+        --><li class="three"><a href="#"><i class="fa-regular fa-handshake"></i>Volunteer Management</a></li><!--
+        --><li class="four"><a href="#"><i class="fa-regular fa-id-card"></i>User Database Management</a></li><!--
+        --><li class="logout"><a href="#">Log out</a></li>
+        <hr/>
+       
+        </ul>
+      
+            
+      
+      </nav>
+    </div>
+
+
+   <section class="main">
+        <h1>Profile Settings</h1>
+        <p>Accounts | CHRISTIAN TADIOAN</p>
+        <i><img src="./media/calendar.png" style="width: auto; height: 60px;"></i>
+       
+    </section> 
+
+     <section class="box">
+        <div class="main-top">
+            <h1>Volunteer Reports</h1>
+            <button type="button" class="create">Create New User</button>
+            <img src="./media/circle.png"style="width: auto; height: 23px;" class="circle">
+            
+        </div>
+        
+     
+        
+        <ul>
+            <div class="inputs">
+            <input type="text" placeholder="  Search " id="search"></input>
+            <div class="i"><img src="./media/search.png"></div><br>
+            <button class="fdate">From Date</button>
+            <button class="tdate">To Date</button>
+            <button class="apply">Apply</button>
+            <img src="./media/apply.png" class="btn-apply" style="width: auto; height: 33px;">
+            <button class="print">Print</button>
+            <img src="./media/print.png" class="btn-print" style="width: auto; height: 33px;">
+        </div>
+        </ul>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="#" class="sub-menu-link"><i class="fa-regular fa-pen-to-square"></i><p>Edit details</p></a>
+                <a href="#" class="sub-menu-link"><i class="fa-regular fa-trash-can"></i><p>Delete</p></a>
+            </div>
+            </div>
+
+
+        <!-- <table class="table">
+        <thead>
+             <tr>
+                <th><input type="checkbox" name="" class="select_all_items"></th> 
+                <th> Date</th>
+                <th> Name</th>
+                <th> Desciption</th>
+                <th> Status</th>
+                <th> role</th>
+                <th> Option</th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>2 Jan 2023</td>
+                <td style="font-weight:bold;" >Mia Cute</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
+                <td style="font-weight:bold;" >Approved</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>14 Dec 2022</td>
+                <td style="font-weight:bold;" >Karina NoJowa</td>
+                <td>Consectetur adipiscing elit</a></td>
+                <td style="font-weight:bold;" > Pending</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>28 Nov 2022</td>
+                <td style="font-weight:bold;" >Reyziel May Dan</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
+                <td style="font-weight:bold;" >Pending</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>26 Nov 2022</td>
+                <td style="font-weight:bold;" >Mami Guls</td>
+                <td>Lorem ipsum dolor sit amet</a></td>
+                <td style="font-weight:bold;" >Approved</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>23 Nov 2022</td>
+                <td style="font-weight:bold;" >Dan Sanaol</td>
+                <td>Enim ad minim veniam</a></td>
+                <td style="font-weight:bold;" >Denied</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>23 Nov 2022</td>
+                <td style="font-weight:bold;" >Gangnam Chai</td>
+                <td>Quis nostrud exercitation ullamco laboris</a></td>
+                <td style="font-weight:bold;" >Approved</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+            </tr>
+          
+            <tr>
+                <td><input type="checkbox" class="item_id" ></td>
+                <td>23 Nov 2022</td>
+                <td style="font-weight:bold;" >Mark Ngipin</td>
+                <td>Duis aute irure dolor in reprehenderit</a></td>
+                <td style="font-weight:bold;" >Denied</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()" id="span1">:</span></td>
+            </tr>
+          
+          
+    
+        </tbody>
+        </table>
+    </div> -->
+        <div class="bottom-field">
+            <p>1</p>
+            <p>-5 of 56</p>
+            <ul class="pagination">
+                <li><a href="#" id="prev"><button class="prev">&#139;</button></a></li>
+                <li><a href="#" id="next"><button class="next">&#155;</button></a></li>
+                <p>The page you're on</p>
+                <select name="" id="option">
+                    <option value="1" id="page1">1</option>
+                    <option value="2" id="2">2</option>
+                    <option value="2"id="3">3</option>
+                </select>
+                
+              <div name="" id="border">
+                </div>
+              </ul>  
+
+<script src="./java/app.js"></script>
+</body>
+</html>
